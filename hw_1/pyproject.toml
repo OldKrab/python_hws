@@ -6,3 +6,6 @@ dependencies = [
 ]
 requires-python = ">=3.11"
 
+[tool.ruff]
+# Allow lines to be as long as 120.
+line-length = 120
