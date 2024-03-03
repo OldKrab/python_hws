@@ -1,0 +1,8 @@
+[project]
+name = "hw_1"
+version = "0.0.1"
+dependencies = [
+    "click==8.1.7",
+]
+requires-python = ">=3.11"
+
