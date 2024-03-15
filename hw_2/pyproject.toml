@@ -1,7 +1,7 @@
 [project]
-name = "hw_2"
-version = "0.1.0"
-description = "Default template for PDM package"
+name = "shushakov_hw_2"
+version = "0.1.1"
+description = ""
 authors = [
     {name = "Daniil Shushakov", email = "4shushakov@gmail.com"},
 ]

@@ -19,3 +19,7 @@ def table_to_tex(table: list[list[Any]]) -> str:
 \end{{table}}
 """
 
+
+def image_to_tex(image_path: str) -> str:
+    return fr"\includegraphics[width=\textwidth]{{ {image_path} }}"
+
