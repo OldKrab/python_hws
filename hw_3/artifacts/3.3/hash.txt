@@ -1,0 +1,2 @@
+A@B hash: 34
+C@D hash: 18

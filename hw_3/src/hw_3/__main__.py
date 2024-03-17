@@ -1,13 +1,27 @@
 import numpy as np
 
-from hw_3.matrix_mixin import MatrixFromMixin
+from hw_3.matrix import Matrix
 
-np.random.seed(0)
-x = MatrixFromMixin(np.random.randint(0, 10, (10, 10)).tolist())
+A = Matrix([[1, 2], [1, 2]])
+C = Matrix([[6, 0], [0, 0]])
+B = Matrix([[1, 2], [3, 4]])
+D = B
 
-print(f"x:\n{x}")
-print(f"str(x):\n{str(x)}")
-print(f"x.width: {x.width}")
-print(f"x.height: {x.height}")
 
-x.save_to_file("temp.txt")
+def print_info():
+    print(f"A:\n{A}")  
+    print(f"B:\n{B}")  
+    print(f"C:\n{C}")  
+    print(f"D:\n{D}")  
+    print(f"A@B:\n{A@B}")  
+    print(f"C@D:\n{C@D}")  
+    print(f"A@B hash: {hash(A@B)}")  
+    print(f"C@D hash: {hash(C@D)}")  
+
+print("With caching")
+print_info()
+print("\nWithout caching")
+Matrix.is_hashing = False
+print_info()
+
+print(f"\n(hash(A) == hash(C)) and (A != C) and (B == D) and (AB != CD): {(hash(A) == hash(C)) and (A != C) and (B == D) and (A@B != C@D)}")
