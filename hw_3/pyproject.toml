@@ -1,0 +1,31 @@
+[project]
+name = "hw_3"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Daniil Shushakov", email = "4shushakov@gmail.com"},
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+dependencies = [
+    "numpy>=1.26.4",
+]
+
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=8.1.1",
+]
+
+
+[tool.ruff]
+line-length = 120
