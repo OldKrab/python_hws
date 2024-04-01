@@ -1,0 +1,18 @@
+a
+23:07:32 - User input: a
+b
+23:07:32 - User input: b
+c
+23:07:33 - User input: c
+23:07:35 - B output: n
+A
+23:07:37 - User input: A
+B
+23:07:37 - User input: B
+23:07:40 - B output: o
+C
+23:07:41 - User input: C
+23:07:45 - B output: p
+23:07:50 - B output: n
+23:07:55 - B output: o
+23:08:00 - B output: p
