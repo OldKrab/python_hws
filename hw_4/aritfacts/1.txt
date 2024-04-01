@@ -1,0 +1,4 @@
+Evaluating 300000'th fibonacci number 10 times
+Sync time: 7.0 seconds
+Threads time: 9.27 seconds
+Processes time: 1.25 seconds
