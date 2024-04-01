@@ -1,0 +1,19 @@
+Cpu count is 12
+Run with ThreadPoolExecutor
+Time for 1 jobs: 3.03 seconds
+Time for 2 jobs: 4.11 seconds
+Time for 4 jobs: 4.74 seconds
+Time for 6 jobs: 4.73 seconds
+Time for 8 jobs: 4.52 seconds
+Time for 12 jobs: 3.85 seconds
+Time for 16 jobs: 3.97 seconds
+Time for 24 jobs: 3.88 seconds
+Run with ProcessPoolExecutor
+Time for 1 jobs: 3.02 seconds
+Time for 2 jobs: 1.54 seconds
+Time for 4 jobs: 0.791 seconds
+Time for 6 jobs: 0.612 seconds
+Time for 8 jobs: 0.534 seconds
+Time for 12 jobs: 0.445 seconds
+Time for 16 jobs: 0.474 seconds
+Time for 24 jobs: 0.469 seconds

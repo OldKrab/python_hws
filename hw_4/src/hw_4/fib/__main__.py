@@ -1,7 +1,7 @@
 from multiprocessing import Process
 from threading import Thread
-import time
-from typing import Any, Callable
+
+from hw_4.measure import measure_func
 
 
 def fibonacci(n: int) -> int:
@@ -9,14 +9,6 @@ def fibonacci(n: int) -> int:
     for _ in range(1, n):
         x, y = y, x + y
     return y
-
-
-def measure_func(func: Callable[..., None], *args: Any) -> float:
-    start_time = time.time()
-    func(*args)
-    end_time = time.time()
-    execution_time = end_time - start_time
-    return execution_time
 
 
 def sync_run(times: int, n: int):
@@ -43,11 +35,11 @@ def processes_run(times: int, n: int):
 n = 300000
 times = 10
 print(f"Evaluating {n}'th fibonacci number {times} times")
-t = measure_func(sync_run, times, n)
+t = measure_func(lambda: sync_run(times, n))
 print(f"Sync time: {t:.3} seconds")
 
-t = measure_func(threads_run, times, n)
+t = measure_func(lambda: threads_run(times, n))
 print(f"Threads time: {t:.3} seconds")
 
-t = measure_func(processes_run, times, n)
+t = measure_func(lambda: processes_run(times, n))
 print(f"Processes time: {t:.3} seconds")
