@@ -1,0 +1,21 @@
+[project]
+name = "hw_5"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Daniil Shushakov", email = "4shushakov@gmail.com"},
+]
+dependencies = [
+    "click>=8.1.7",
+    "aiohttp>=3.9.3",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
